@@ -8,8 +8,9 @@ def user_registered(func):
         if username in registered_users:
             return func(username, page)
         else:
-            return "Access is denied."
+            return "Access is denied.."
     return wrapper
+
 
 
 # Приклад використання декоратора
